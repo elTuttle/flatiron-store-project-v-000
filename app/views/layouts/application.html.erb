@@ -10,8 +10,10 @@
 <body>
 
 <%= render 'layouts/header' %>
-<%if !current_user.current_cart.nil?%>
-  <%= link_to 'Cart', cart_path(current_user.current_cart)%>
+<%if !current_user.nil? %>
+  <%if !current_user.current_cart.nil?%>
+    <%= link_to 'Cart', cart_path(current_user.current_cart)%>
+  <%end%>
 <%end%>
 <%= yield %>
 
