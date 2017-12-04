@@ -7,7 +7,7 @@
   Category.create(title: Faker::Commerce.department)
 end
 
-User.create!(email: "guy@gmail.com", password: "111111111")
+User.create!(email: "newguy@gmail.com", password: "111111111")
 
 counter = 1
 Item.all.each do |item|
