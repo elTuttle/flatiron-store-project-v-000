@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   before(:each) do
     @user = User.first
+    binding.pry
   end
 
   it "has many carts" do
