@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  def index
+  def show
     redirect_to '/'
   end
 
